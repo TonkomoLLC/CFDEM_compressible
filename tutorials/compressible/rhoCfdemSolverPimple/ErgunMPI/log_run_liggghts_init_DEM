@@ -1,0 +1,185 @@
+
+//   run_liggghts_init_DEM   //
+
+/home/eadaymo/CFDEM/eadaymo-KIT-PUBLIC-5.x/run/tutorials/rhoCfdemSolverPimple/ErgunTestMPI/DEM
+
+LIGGGHTS (Version LIGGGHTS-PUBLIC 3.8.0, compiled 2018-05-12-08:33:06 by eadaymo, git commit unknown)
+log             ../DEM/log.liggghts
+thermo_log      ../DEM/post/thermo.txt
+
+atom_style      granular
+atom_modify     map array
+communicate     single vel yes
+
+boundary        m m m
+newton          off
+
+units           si
+
+region          reg block -0.015 0.015 -0.015 0.015 -0.001 0.0554 units box
+create_box      1 reg
+Created orthogonal box = (-0.015 -0.015 -0.001) to (0.015 0.015 0.0554)
+  1 by 2 by 2 MPI processor grid
+
+neighbor        0.001 bin
+neigh_modify    delay 0
+
+
+# Material properties required for granular pair styles
+
+fix         m1 all property/global youngsModulus peratomtype 5.e6
+fix         m2 all property/global poissonsRatio peratomtype 0.45
+fix         m3 all property/global coefficientRestitution peratomtypepair 1 0.3
+fix         m4 all property/global coefficientFriction peratomtypepair 1 0.5
+
+# pair style
+pair_style  gran model hertz tangential history # Hertzian without cohesion
+pair_coeff  * *
+
+# timestep, gravity
+timestep    0.00001
+fix         gravi all gravity 9.81 vector 0.0 0.0 -1.0
+
+# walls
+fix     zwalls1  all wall/gran model hertz tangential history primitive type 1 zplane 0.0
+fix     zwalls2  all wall/gran model hertz tangential history primitive type 1 zplane 0.0553
+fix     cylwalls all wall/gran model hertz tangential history primitive type 1 zcylinder 0.01385 0. 0.
+
+# particle distributions and insertion
+region  bc cylinder z 0.0 0.0 0.012 0. 0.055 units box
+fix     pts1 all particletemplate/sphere 15485863 atom_type 1 density constant 2000 radius constant 0.0005
+fix     pdd1 all particledistribution/discrete 15485867 1 pts1 1.0
+Fix particledistribution/discrete (id pdd1): distribution based on mass%:
+    pts1: d=1.000000e-03 (max. bounding sphere) mass%=100.000000%
+Fix particledistribution/discrete (id pdd1): distribution based on number%:
+    pts1: d=1.000000e-03 (max. bounding sphere) number%=100.000000%
+
+fix     ins all insert/pack seed 32452843 distributiontemplate pdd1 vel constant 0. 0. -1. insert_every once overlapcheck yes all_in yes particles_in_region 10000 region bc
+
+# apply nve integration to all particles that are inserted as single particles
+fix     integr all nve/sphere
+
+# screen output
+compute         rke all erotate/sphere
+thermo_style    custom step atoms ke c_rke vol
+thermo          1000
+thermo_modify   lost ignore norm no
+compute_modify  thermo_temp dynamic yes
+WARNING: Changing thermo_temp compute object. This object is deprecated and will be removed in the future. (../compute.cpp:161)
+
+# insert the first particles so that dump is not empty
+run         1
+Setting up run at Wed Jul 18 21:08:33 2018
+
+INFO: Resetting random generator for region bc
+INFO: Particle insertion ins: inserting every 0 steps
+Memory usage per processor = 4.34856 Mbytes
+    Step    Atoms         KinEng            rke         Volume 
+       0        0              0              0      5.076e-05 
+insertion: proc 1 at 0 %
+insertion: proc 2 at 0 %
+insertion: proc 3 at 0 %
+insertion: proc 0 at 0 %
+insertion: proc 1 at 10 %
+insertion: proc 2 at 10 %
+insertion: proc 0 at 10 %
+insertion: proc 3 at 10 %
+insertion: proc 1 at 20 %
+insertion: proc 0 at 20 %
+insertion: proc 2 at 20 %
+insertion: proc 3 at 20 %
+insertion: proc 1 at 30 %
+insertion: proc 0 at 30 %
+insertion: proc 2 at 30 %
+insertion: proc 3 at 30 %
+insertion: proc 1 at 40 %
+insertion: proc 2 at 40 %
+insertion: proc 0 at 40 %
+insertion: proc 3 at 40 %
+insertion: proc 1 at 50 %
+insertion: proc 0 at 50 %
+insertion: proc 2 at 50 %
+insertion: proc 3 at 50 %
+insertion: proc 1 at 60 %
+insertion: proc 2 at 60 %
+insertion: proc 0 at 60 %
+insertion: proc 3 at 60 %
+insertion: proc 1 at 70 %
+insertion: proc 2 at 70 %
+insertion: proc 0 at 70 %
+insertion: proc 3 at 70 %
+insertion: proc 1 at 80 %
+insertion: proc 0 at 80 %
+insertion: proc 2 at 80 %
+insertion: proc 3 at 80 %
+insertion: proc 1 at 90 %
+insertion: proc 0 at 90 %
+insertion: proc 2 at 90 %
+insertion: proc 3 at 90 %
+insertion: proc 1 at 100 %
+insertion: proc 2 at 100 %
+insertion: proc 0 at 100 %
+insertion: proc 3 at 100 %
+INFO: Particle insertion ins: inserted 10000 particle templates (mass 1.047198e-02) at step 1
+ - a total of 10000 particle templates (mass 1.047198e-02) inserted so far.
+       1    10000   0.0052365014              0      5.076e-05 
+Loop time of 0.0204525 on 4 procs for 1 steps with 10000 atoms, finish time Wed Jul 18 21:08:33 2018
+
+
+Pair  time (%) = 0.000314067 (1.53559)
+Neigh time (%) = 0.00318068 (15.5515)
+Comm  time (%) = 0.000384075 (1.87788)
+Outpt time (%) = 0.000444598 (2.1738)
+Other time (%) = 0.0161291 (78.8612)
+
+Nlocal:    2500 ave 2543 max 2463 min
+Histogram: 1 0 1 0 0 0 1 0 0 1
+Nghost:    664 ave 680 max 644 min
+Histogram: 1 0 0 0 0 1 1 0 0 1
+Neighs:    15913 ave 16264 max 15746 min
+Histogram: 2 0 1 0 0 0 0 0 0 1
+
+Total # of neighbors = 63652
+Ave neighs/atom = 6.3652
+Neighbor list builds = 1
+Dangerous builds = 0
+dump        dmp all custom 5000 post/dump.liggghts_init id type x y z ix iy iz vx vy vz fx fy fz omegax omegay omegaz radius
+
+run         10000 upto
+Setting up run at Wed Jul 18 21:08:33 2018
+
+Memory usage per processor = 8.20625 Mbytes
+    Step    Atoms         KinEng            rke         Volume 
+       1    10000   0.0052365014              0      5.076e-05 
+    1000    10000    0.004499515  3.5724477e-05      5.076e-05 
+    2000    10000   0.0032482753  3.7493628e-05      5.076e-05 
+    3000    10000  0.00099726251  4.6485027e-05      5.076e-05 
+    4000    10000  1.2109689e-05  6.8339625e-06      5.076e-05 
+    5000    10000  5.5367103e-06  3.2627232e-06      5.076e-05 
+    6000    10000  1.8742949e-06  1.3700303e-06      5.076e-05 
+    7000    10000  7.5503419e-07  6.2115744e-07      5.076e-05 
+    8000    10000  4.1455037e-07  3.1489761e-07      5.076e-05 
+    9000    10000  1.9801973e-07  1.3872972e-07      5.076e-05 
+   10000    10000  7.4569765e-08  6.0588027e-08      5.076e-05 
+Loop time of 22.1835 on 4 procs for 9999 steps with 10000 atoms, finish time Wed Jul 18 21:08:56 2018
+
+
+Pair  time (%) = 9.509 (42.8652)
+Neigh time (%) = 0.33608 (1.515)
+Comm  time (%) = 0.341869 (1.5411)
+Outpt time (%) = 0.0521992 (0.235306)
+Other time (%) = 11.9444 (53.8434)
+
+Nlocal:    2500 ave 5006 max 0 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+Nghost:    464.25 ave 932 max 0 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+Neighs:    45529.2 ave 91113 max 0 min
+Histogram: 2 0 0 0 0 0 0 0 0 2
+
+Total # of neighbors = 182117
+Ave neighs/atom = 18.2117
+Neighbor list builds = 118
+Dangerous builds = 0
+write_restart   post/restart/liggghts.restart
+System init for write_restart ...

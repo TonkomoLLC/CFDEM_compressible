@@ -1,0 +1,1027 @@
+
+//   log_compileLIGGGHTS-2018-05-12-12:49   //
+
+/home/eadaymo/LIGGGHTS/LIGGGHTS-PUBLIC/src
+
+rm -rf Obj_auto MAKE/Makefile.auto.options lmp_auto liblmp_auto.a liblmp_auto.so
+Creating list of contact models completed.
+make[1]: Entering directory '/home/eadaymo/LIGGGHTS/LIGGGHTS-PUBLIC/src/Obj_auto'
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../region_block.cpp > region_block.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_ave_atom.cpp > fix_ave_atom.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../dihedral_hybrid.cpp > dihedral_hybrid.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_cluster_atom.cpp > compute_cluster_atom.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../random.cpp > random.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_buoyancy.cpp > fix_buoyancy.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../comm.cpp > comm.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute.cpp > compute.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../contact_models.cpp > contact_models.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_gyration.cpp > compute_gyration.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../region_neighbor_list.cpp > region_neighbor_list.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../dump_mesh_vtk.cpp > dump_mesh_vtk.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../modify_liggghts.cpp > modify_liggghts.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../bond_hybrid.cpp > bond_hybrid.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../region_union.cpp > region_union.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../dump_xyz.cpp > dump_xyz.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_wall_sph.cpp > fix_wall_sph.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../math_extra_liggghts_nonspherical.cpp > math_extra_liggghts_nonspherical.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../mesh_module_stress_servo.cpp > mesh_module_stress_servo.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_contact_property_atom.cpp > fix_contact_property_atom.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../pair_sph.cpp > pair_sph.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../group.cpp > group.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../run.cpp > run.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_contact_history_mesh.cpp > fix_contact_history_mesh.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_adapt.cpp > fix_adapt.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_insert_rate_region.cpp > fix_insert_rate_region.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_nparticles_tracer_region.cpp > compute_nparticles_tracer_region.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_multisphere_break.cpp > fix_multisphere_break.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_momentum.cpp > fix_momentum.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_temp.cpp > compute_temp.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../atom_map.cpp > atom_map.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../global_properties.cpp > global_properties.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_inertia_molecule.cpp > compute_inertia_molecule.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../dump_vtk.cpp > dump_vtk.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../atom_vec_hybrid.cpp > atom_vec_hybrid.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../dump_mesh_vtm.cpp > dump_mesh_vtm.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../atom_vec_ellipsoid.cpp > atom_vec_ellipsoid.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../kspace.cpp > kspace.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_print.cpp > fix_print.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../atom_vec_superquadric.cpp > atom_vec_superquadric.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_reduce.cpp > compute_reduce.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../verlet.cpp > verlet.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../region_prism.cpp > region_prism.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../particleToInsert.cpp > particleToInsert.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../neigh_derive.cpp > neigh_derive.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_contact_history.cpp > fix_contact_history.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../pair_sph_artvisc_tenscorr.cpp > pair_sph_artvisc_tenscorr.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_template_multisphere.cpp > fix_template_multisphere.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../atom_vec_full.cpp > atom_vec_full.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_minimize.cpp > fix_minimize.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_property_global.cpp > fix_property_global.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../input_mesh_tet.cpp > input_mesh_tet.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../write_dump.cpp > write_dump.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../info.cpp > info.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_nve_asphere.cpp > fix_nve_asphere.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_ave_time.cpp > fix_ave_time.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_ave_euler.cpp > fix_ave_euler.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_cfd_coupling_convection_impl.cpp > fix_cfd_coupling_convection_impl.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_multicontact_halfspace.cpp > fix_multicontact_halfspace.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../rotate.cpp > rotate.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_sph.cpp > fix_sph.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../pair_hybrid_overlay.cpp > pair_hybrid_overlay.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../dump_atom_vtk.cpp > dump_atom_vtk.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../library_cfd_coupling.cpp > library_cfd_coupling.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../angle.cpp > angle.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_massflow_mesh.cpp > fix_massflow_mesh.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../pair_gran_proxy.cpp > pair_gran_proxy.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../bounding_box.cpp > bounding_box.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../neigh_half_multi.cpp > neigh_half_multi.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_deform_check.cpp > fix_deform_check.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_store_force.cpp > fix_store_force.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_enforce2d.cpp > fix_enforce2d.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_neighlist_mesh.cpp > fix_neighlist_mesh.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_mesh_surface.cpp > fix_mesh_surface.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../dump_local.cpp > dump_local.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_nve_noforce.cpp > fix_nve_noforce.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../container_base.cpp > container_base.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../set.cpp > set.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../mesh_module.cpp > mesh_module.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_region_variable.cpp > fix_region_variable.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_addforce.cpp > fix_addforce.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_check_timestep_sph.cpp > fix_check_timestep_sph.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_dt_reset.cpp > fix_dt_reset.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_mesh.cpp > fix_mesh.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../domain.cpp > domain.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../citeme.cpp > citeme.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_lb_coupling_onetoone.cpp > fix_lb_coupling_onetoone.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../minimize.cpp > minimize.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_cfd_coupling_convection_species.cpp > fix_cfd_coupling_convection_species.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_contact_atom_gran.cpp > compute_contact_atom_gran.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_particledistribution_discrete.cpp > fix_particledistribution_discrete.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_multisphere_comm.cpp > fix_multisphere_comm.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_property_molecule.cpp > compute_property_molecule.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_ke_multisphere.cpp > compute_ke_multisphere.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../dump.cpp > dump.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../multisphere.cpp > multisphere.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../dump_custom.cpp > dump_custom.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_displace_atom.cpp > compute_displace_atom.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../properties.cpp > properties.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../random_mars.cpp > random_mars.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../atom_vec_charge.cpp > atom_vec_charge.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix.cpp > fix.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../delete_atoms.cpp > delete_atoms.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_cfd_coupling.cpp > fix_cfd_coupling.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../signal_handling.cpp > signal_handling.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_nve_asphere_base.cpp > fix_nve_asphere_base.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_wall_region_sph.cpp > fix_wall_region_sph.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../error.cpp > error.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../atom_vec_sphere.cpp > atom_vec_sphere.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_template_multiplespheres.cpp > fix_template_multiplespheres.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_erotate_sphere_atom.cpp > compute_erotate_sphere_atom.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../dump_image.cpp > dump_image.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../bond_harmonic.cpp > bond_harmonic.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../cfd_regionmodel_none.cpp > cfd_regionmodel_none.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_spring.cpp > fix_spring.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../cfd_datacoupling.cpp > cfd_datacoupling.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../tri_mesh_planar.cpp > tri_mesh_planar.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../modify.cpp > modify.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../integrate.cpp > integrate.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_respa.cpp > fix_respa.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_stress_atom.cpp > compute_stress_atom.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../superquadric.cpp > superquadric.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../neigh_gran.cpp > neigh_gran.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../atom_vec.cpp > atom_vec.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../input_mesh_tri.cpp > input_mesh_tri.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../create_atoms.cpp > create_atoms.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../region_mesh_tet.cpp > region_mesh_tet.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_freeze.cpp > fix_freeze.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../dump_decomposition_vtk.cpp > dump_decomposition_vtk.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_check_timestep_gran.cpp > fix_check_timestep_gran.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_spring_self.cpp > fix_spring_self.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../min_linesearch.cpp > min_linesearch.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_nve_sph_stationary.cpp > fix_nve_sph_stationary.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_sph_density_continuity.cpp > fix_sph_density_continuity.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../reader_xyz.cpp > reader_xyz.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_fiber_spring_simple.cpp > fix_fiber_spring_simple.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../improper.cpp > improper.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../region_cone.cpp > region_cone.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../dump_mesh.cpp > dump_mesh.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_ave_histo.cpp > fix_ave_histo.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../image.cpp > image.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../dump_custom_vtk.cpp > dump_custom_vtk.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../pair_line_lj.cpp > pair_line_lj.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../variable.cpp > variable.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../finish.cpp > finish.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../dump_local_gran_vtk.cpp > dump_local_gran_vtk.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../delete_bonds.cpp > delete_bonds.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_erotate_superquadric.cpp > compute_erotate_superquadric.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_insert_stream.cpp > fix_insert_stream.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_erotate_sphere.cpp > compute_erotate_sphere.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_insert.cpp > fix_insert.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_atom_molecule.cpp > compute_atom_molecule.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../pair.cpp > pair.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_nve.cpp > fix_nve.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../cfd_datacoupling_file.cpp > cfd_datacoupling_file.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_continuum_weighted.cpp > fix_continuum_weighted.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../procmap.cpp > procmap.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../min_cg.cpp > min_cg.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_aveforce.cpp > fix_aveforce.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../velocity.cpp > velocity.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../write_restart.cpp > write_restart.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../modified_andrew.cpp > modified_andrew.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../thermo.cpp > thermo.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_property_atom.cpp > fix_property_atom.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_massflow_mesh_sieve.cpp > fix_massflow_mesh_sieve.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../neighbor.cpp > neighbor.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_gravity.cpp > fix_gravity.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../dump_mesh_stl.cpp > dump_mesh_stl.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_external.cpp > fix_external.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_nve_sph.cpp > fix_nve_sph.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../input_multisphere.cpp > input_multisphere.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_property_atom_tracer.cpp > fix_property_atom_tracer.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_cna_atom.cpp > compute_cna_atom.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_rigid.cpp > fix_rigid.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_property_atom.cpp > compute_property_atom.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_lineforce.cpp > fix_lineforce.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../respa.cpp > respa.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../lammps.cpp > lammps.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../region.cpp > region.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../dihedral.cpp > dihedral.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_diam_max.cpp > fix_diam_max.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../read_data.cpp > read_data.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../math_extra_liggghts_superquadric.cpp > math_extra_liggghts_superquadric.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_rigid.cpp > compute_rigid.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../main.cpp > main.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_slice.cpp > compute_slice.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../neigh_request.cpp > neigh_request.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_coord_atom.cpp > compute_coord_atom.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../bond.cpp > bond.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_ave_correlate.cpp > fix_ave_correlate.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_planeforce.cpp > fix_planeforce.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_msd_molecule.cpp > compute_msd_molecule.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../neigh_list.cpp > neigh_list.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_property_atom_region_tracer.cpp > fix_property_atom_region_tracer.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../neigh_half_bin.cpp > neigh_half_bin.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../region_wedge.cpp > region_wedge.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../output.cpp > output.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../region_intersect.cpp > region_intersect.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../region_sphere.cpp > region_sphere.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_insert_pack.cpp > fix_insert_pack.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_contact_atom.cpp > compute_contact_atom.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../granular_wall.cpp > granular_wall.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_pe.cpp > compute_pe.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../granular_pair_style.cpp > granular_pair_style.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_reduce_region.cpp > compute_reduce_region.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../change_box.cpp > change_box.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../update.cpp > update.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../irregular.cpp > irregular.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_cfd_coupling_force_implicit.cpp > fix_cfd_coupling_force_implicit.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../universe.cpp > universe.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../reader_native.cpp > reader_native.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../atom_vec_molecular.cpp > atom_vec_molecular.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_msd.cpp > compute_msd.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_group_group.cpp > compute_group_group.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_store.cpp > fix_store.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_erotate_asphere.cpp > compute_erotate_asphere.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../read_restart.cpp > read_restart.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_box_relax.cpp > fix_box_relax.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../neigh_full.cpp > neigh_full.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../dump_local_gran.cpp > dump_local_gran.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../improper_hybrid.cpp > improper_hybrid.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../reader.cpp > reader.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_com.cpp > compute_com.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_read_restart.cpp > fix_read_restart.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_pair_gran_local.cpp > compute_pair_gran_local.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../atom_vec_atomic.cpp > atom_vec_atomic.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../pair_gran.cpp > pair_gran.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_deform.cpp > fix_deform.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../mesh_mover_rotation.cpp > mesh_mover_rotation.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../read_dump.cpp > read_dump.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../replicate.cpp > replicate.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_move_mesh.cpp > fix_move_mesh.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../atom_vec_sph.cpp > atom_vec_sph.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_setforce.cpp > fix_setforce.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../memory.cpp > memory.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../region_cylinder.cpp > region_cylinder.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_base_liggghts.cpp > fix_base_liggghts.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../special.cpp > special.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_wall_gran.cpp > fix_wall_gran.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_property_local.cpp > compute_property_local.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../atom_vec_sphere_w.cpp > atom_vec_sphere_w.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../atom_vec_tri.cpp > atom_vec_tri.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_template_superquadric.cpp > fix_template_superquadric.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_nve_sphere.cpp > fix_nve_sphere.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_move.cpp > fix_move.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../neigh_dummy.cpp > neigh_dummy.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../write_data.cpp > write_data.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../math_extra.cpp > math_extra.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../dump_particle.cpp > dump_particle.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../neigh_bond.cpp > neigh_bond.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../tri_mesh.cpp > tri_mesh.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../dump_euler_vtk.cpp > dump_euler_vtk.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../timer.cpp > timer.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_gyration_molecule.cpp > compute_gyration_molecule.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_spring_rg.cpp > fix_spring_rg.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../mesh_module_liquidtransfer.cpp > mesh_module_liquidtransfer.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../atom_vec_sph_var.cpp > atom_vec_sph_var.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_sph_density_corr.cpp > fix_sph_density_corr.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../neigh_stencil.cpp > neigh_stencil.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_viscous.cpp > fix_viscous.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../custom_value_tracker.cpp > custom_value_tracker.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../random_park.cpp > random_park.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../property_registry.cpp > property_registry.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_pe_atom.cpp > compute_pe_atom.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_nve_line.cpp > fix_nve_line.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_pressure.cpp > compute_pressure.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_contact_property_atom_wall.cpp > fix_contact_property_atom_wall.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../atom_vec_line.cpp > atom_vec_line.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../angle_hybrid.cpp > angle_hybrid.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_bond_local.cpp > compute_bond_local.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../pair_hybrid.cpp > pair_hybrid.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../library.cpp > library.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_wall.cpp > fix_wall.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../displace_atoms.cpp > displace_atoms.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../cfd_datacoupling_mpi.cpp > cfd_datacoupling_mpi.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../pair_soft.cpp > pair_soft.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_ke.cpp > compute_ke.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_store_state.cpp > fix_store_state.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../dump_custom_vtm.cpp > dump_custom_vtm.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../create_box.cpp > create_box.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_nve_limit.cpp > fix_nve_limit.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_wall_region.cpp > fix_wall_region.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../force.cpp > force.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../mesh_module_stress.cpp > mesh_module_stress.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_erotate_multisphere.cpp > compute_erotate_multisphere.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_property_atom_tracer_stream.cpp > fix_property_atom_tracer_stream.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_centro_atom.cpp > compute_centro_atom.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../region_plane.cpp > region_plane.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_nve_asphere_noforce.cpp > fix_nve_asphere_noforce.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_nve_superquadric.cpp > fix_nve_superquadric.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../input.cpp > input.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_template_sphere.cpp > fix_template_sphere.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_rdf.cpp > compute_rdf.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_ave_spatial.cpp > fix_ave_spatial.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../dump_movie.cpp > dump_movie.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../lattice.cpp > lattice.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_cfd_coupling_convection.cpp > fix_cfd_coupling_convection.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../tet_mesh.cpp > tet_mesh.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../neigh_half_nsq.cpp > neigh_half_nsq.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_scalar_transport_equation.cpp > fix_scalar_transport_equation.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_heat_gran.cpp > fix_heat_gran.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../mesh_mover_linear.cpp > mesh_mover_linear.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_sph_density_summation.cpp > fix_sph_density_summation.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_com_molecule.cpp > compute_com_molecule.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_cfd_coupling_force.cpp > fix_cfd_coupling_force.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_drag.cpp > fix_drag.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../run_time.cpp > run_time.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../min.cpp > min.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_multisphere.cpp > fix_multisphere.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_sph_pressure.cpp > fix_sph_pressure.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../particleToInsertSuperquadric.cpp > particleToInsertSuperquadric.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_efield.cpp > fix_efield.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_ke_atom.cpp > compute_ke_atom.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../fix_heat_gran_conduction.cpp > fix_heat_gran_conduction.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../sort_buffer.cpp > sort_buffer.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../particleToInsert_multisphere.cpp > particleToInsert_multisphere.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../atom.cpp > atom.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../neigh_respa.cpp > neigh_respa.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../multisphere_parallel.cpp > multisphere_parallel.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC  -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -M ../compute_erotate.cpp > compute_erotate.d
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_erotate.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../multisphere_parallel.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../neigh_respa.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../atom.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../particleToInsert_multisphere.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../sort_buffer.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_heat_gran_conduction.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_ke_atom.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_efield.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../particleToInsertSuperquadric.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_sph_pressure.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_multisphere.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../min.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../run_time.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_drag.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_cfd_coupling_force.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_com_molecule.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_sph_density_summation.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../mesh_mover_linear.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_heat_gran.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_scalar_transport_equation.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../neigh_half_nsq.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../tet_mesh.cpp
+In file included from ../general_container.h:187:0,
+                 from ../scalar_container.h:47,
+                 from ../container.h:47,
+                 from ../multi_node_mesh.h:52,
+                 from ../multi_node_mesh_parallel.h:46,
+                 from ../tracking_mesh.h:51,
+                 from ../volume_mesh.h:45,
+                 from ../tet_mesh.h:45,
+                 from ../tet_mesh.cpp:42:
+../general_container_I.h: In instantiation of ‘bool LAMMPS_NS::GeneralContainer<T, NUM_VEC, LEN_VEC>::calcMeanSquareFromContainer() [with T = bool; int NUM_VEC = 1; int LEN_VEC = 4]’:
+../tet_mesh.cpp:54:1:   required from here
+../general_container_I.h:442:53: warning: ‘*’ in boolean context, suggest ‘&&’ instead [-Wint-in-bool-context]
+                         arr_[n][i][j] = contribution*contribution;
+                                         ~~~~~~~~~~~~^~~~~~~~~~~~~
+../general_container_I.h:459:53: warning: ‘*’ in boolean context, suggest ‘&&’ instead [-Wint-in-bool-context]
+                         arr_[n][i][j] = contribution*contribution;
+                                         ~~~~~~~~~~~~^~~~~~~~~~~~~
+../general_container_I.h: In instantiation of ‘void LAMMPS_NS::GeneralContainer<T, NUM_VEC, LEN_VEC>::scale(double) [with T = bool; int NUM_VEC = 1; int LEN_VEC = 4]’:
+../tet_mesh.cpp:54:1:   required from here
+../general_container_I.h:615:31: warning: ‘*’ in boolean context, suggest ‘&&’ instead [-Wint-in-bool-context]
+                 arr_[i][j][k] *= factorApplied;
+                 ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+../general_container_I.h: In member function ‘void LAMMPS_NS::VolumeMesh<NUM_NODES, NUM_FACES, NUM_NODES_PER_FACE>::calcVolPropertiesOfNewElement() [with int NUM_NODES = 4; int NUM_FACES = 4; int NUM_NODES_PER_FACE = 3]’:
+../general_container_I.h:523:29: warning: ‘f3’ is used uninitialized in this function [-Wuninitialized]
+         arr_[n][m][j] = elem[j];
+                         ~~~~^
+../general_container_I.h:523:29: warning: ‘*((void*)& f3 +4)’ is used uninitialized in this function [-Wuninitialized]
+../general_container_I.h:523:29: warning: ‘*((void*)& f3 +8)’ is used uninitialized in this function [-Wuninitialized]
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_cfd_coupling_convection.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../lattice.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../dump_movie.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_ave_spatial.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_rdf.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_template_sphere.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../input.cpp
+../input.cpp: In member function ‘void LAMMPS_NS::Input::print()’:
+../input.cpp:1036:13: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+             if (iarg+2 > narg)
+             ^~
+../input.cpp:1038:17: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+                 if (me == 0)
+                 ^~
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_nve_superquadric.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_nve_asphere_noforce.cpp
+../fix_nve_asphere_noforce.cpp: In member function ‘virtual void LAMMPS_NS::FixNVEAsphereNoforce::initial_integrate(int)’:
+../fix_nve_asphere_noforce.cpp:108:8: warning: unused variable ‘type’ [-Wunused-variable]
+   int *type = atom->type;
+        ^~~~
+../fix_nve_asphere_noforce.cpp:127:33: warning: ‘bonus’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+       shape = bonus[ellipsoid[i]].shape;
+                                 ^
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../region_plane.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_centro_atom.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_property_atom_tracer_stream.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_erotate_multisphere.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../mesh_module_stress.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../force.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_wall_region.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_nve_limit.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../create_box.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../dump_custom_vtm.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_store_state.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_ke.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../pair_soft.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../cfd_datacoupling_mpi.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../displace_atoms.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_wall.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../library.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../pair_hybrid.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_bond_local.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../angle_hybrid.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../atom_vec_line.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_contact_property_atom_wall.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_pressure.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_nve_line.cpp
+../fix_nve_line.cpp: In member function ‘virtual void LAMMPS_NS::FixNVELine::init()’:
+../fix_nve_line.cpp:91:9: warning: unused variable ‘itype’ [-Wunused-variable]
+   int i,itype;
+         ^~~~~
+../fix_nve_line.cpp: In member function ‘virtual void LAMMPS_NS::FixNVELine::initial_integrate(int)’:
+../fix_nve_line.cpp:120:25: warning: unused variable ‘delx’ [-Wunused-variable]
+   double dtfm,dtirotate,delx,dely,length,theta;
+                         ^~~~
+../fix_nve_line.cpp:120:30: warning: unused variable ‘dely’ [-Wunused-variable]
+   double dtfm,dtirotate,delx,dely,length,theta;
+                              ^~~~
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_pe_atom.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../property_registry.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../random_park.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../custom_value_tracker.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_viscous.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../neigh_stencil.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_sph_density_corr.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../atom_vec_sph_var.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../mesh_module_liquidtransfer.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_spring_rg.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_gyration_molecule.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../timer.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../dump_euler_vtk.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../tri_mesh.cpp
+In file included from ../general_container.h:187:0,
+                 from ../scalar_container.h:47,
+                 from ../container.h:47,
+                 from ../multi_node_mesh.h:52,
+                 from ../multi_node_mesh_parallel.h:46,
+                 from ../tracking_mesh.h:51,
+                 from ../surface_mesh.h:47,
+                 from ../tri_mesh.h:47,
+                 from ../tri_mesh.cpp:42:
+../general_container_I.h: In instantiation of ‘bool LAMMPS_NS::GeneralContainer<T, NUM_VEC, LEN_VEC>::calcMeanSquareFromContainer() [with T = bool; int NUM_VEC = 1; int LEN_VEC = 3]’:
+../tri_mesh.cpp:54:1:   required from here
+../general_container_I.h:442:53: warning: ‘*’ in boolean context, suggest ‘&&’ instead [-Wint-in-bool-context]
+                         arr_[n][i][j] = contribution*contribution;
+                                         ~~~~~~~~~~~~^~~~~~~~~~~~~
+../general_container_I.h:459:53: warning: ‘*’ in boolean context, suggest ‘&&’ instead [-Wint-in-bool-context]
+                         arr_[n][i][j] = contribution*contribution;
+                                         ~~~~~~~~~~~~^~~~~~~~~~~~~
+../general_container_I.h: In instantiation of ‘void LAMMPS_NS::GeneralContainer<T, NUM_VEC, LEN_VEC>::scale(double) [with T = bool; int NUM_VEC = 1; int LEN_VEC = 3]’:
+../tri_mesh.cpp:54:1:   required from here
+../general_container_I.h:615:31: warning: ‘*’ in boolean context, suggest ‘&&’ instead [-Wint-in-bool-context]
+                 arr_[i][j][k] *= factorApplied;
+                 ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../neigh_bond.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../dump_particle.cpp
+In file included from /usr/include/vtk-6.3/vtkTriangle.h:26:0,
+                 from ../dump_particle.cpp:80:
+/usr/include/vtk-6.3/vtkMath.h:664:3: warning: multi-line comment [-Wcomment]
+   // a & b \\
+   ^
+/usr/include/vtk-6.3/vtkMath.h:668:3: warning: multi-line comment [-Wcomment]
+   // 1 & 0 \\
+   ^
+/usr/include/vtk-6.3/vtkMath.h:671:3: warning: multi-line comment [-Wcomment]
+   // a & b \\
+   ^
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../math_extra.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../write_data.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../neigh_dummy.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_move.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_nve_sphere.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_template_superquadric.cpp
+../fix_template_superquadric.cpp: In constructor ‘LAMMPS_NS::FixTemplateSuperquadric::FixTemplateSuperquadric(LAMMPS_NS::LAMMPS*, int, char**)’:
+../fix_template_superquadric.cpp:279:11: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+           if(strcmp(arg[iarg],"shapez") == 0)
+           ^~
+../fix_template_superquadric.cpp:281:13: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+             iarg += 4;
+             ^~~~
+../fix_template_superquadric.cpp:314:9: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+         if( value <= 0. )
+         ^~
+../fix_template_superquadric.cpp:316:11: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+           pdf_size->set_params<RANDOM_CONSTANT>(value);
+           ^~~~~~~~
+../fix_template_superquadric.cpp:339:9: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+         if(shmin <= 0.0)
+         ^~
+../fix_template_superquadric.cpp:341:11: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+           pdf_size->set_params<RANDOM_UNIFORM>(shmin,shmax);
+           ^~~~~~~~
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../atom_vec_tri.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../atom_vec_sphere_w.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_property_local.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_wall_gran.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../special.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_base_liggghts.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../region_cylinder.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../memory.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_setforce.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../atom_vec_sph.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_move_mesh.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../replicate.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../read_dump.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../mesh_mover_rotation.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_deform.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../pair_gran.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../atom_vec_atomic.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_pair_gran_local.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_read_restart.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_com.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../reader.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../improper_hybrid.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../dump_local_gran.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../neigh_full.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_box_relax.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../read_restart.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_erotate_asphere.cpp
+../compute_erotate_asphere.cpp: In member function ‘virtual double LAMMPS_NS::ComputeERotateAsphere::compute_scalar()’:
+../compute_erotate_asphere.cpp:170:35: warning: ‘tbonus’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+         inertia[0] = tbonus[tri[i]].inertia[0];
+                                   ^
+../compute_erotate_asphere.cpp:161:32: warning: ‘lbonus’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+         length = lbonus[line[i]].length;
+                                ^
+../compute_erotate_asphere.cpp:140:36: warning: ‘ebonus’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+         shape = ebonus[ellipsoid[i]].shape;
+                                    ^
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_store.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_group_group.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_msd.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../atom_vec_molecular.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../reader_native.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../universe.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_cfd_coupling_force_implicit.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../irregular.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../update.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../change_box.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_reduce_region.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../granular_pair_style.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_pe.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../granular_wall.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_contact_atom.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_insert_pack.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../region_sphere.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../region_intersect.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../output.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../region_wedge.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../neigh_half_bin.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_property_atom_region_tracer.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../neigh_list.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_msd_molecule.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_planeforce.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_ave_correlate.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../bond.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_coord_atom.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../neigh_request.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_slice.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../main.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_rigid.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../math_extra_liggghts_superquadric.cpp
+../math_extra_liggghts_superquadric.cpp: In function ‘double MathExtraLiggghtsNonspherical::minimal_distance(Superquadric*, Superquadric*, const double*, const double*, double*, double*, bool*)’:
+../math_extra_liggghts_superquadric.cpp:1223:5: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+     if(nan_found)
+     ^~
+../math_extra_liggghts_superquadric.cpp:1225:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+       if(deltax > 0.01*size) {
+       ^~
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../read_data.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_diam_max.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../dihedral.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../region.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../lammps.cpp
+In file included from ../rolling_model_luding.h:48:0,
+                 from ../style_rolling_model.h:6,
+                 from ../contact_models.h:68,
+                 from ../granular_styles.h:75,
+                 from ../lammps.cpp:87:
+../math_vector.h: In function ‘void LAMMPS_NS::vec_norm(double (&)[3])’:
+../math_vector.h:97:19: warning: ISO C++1z does not allow ‘register’ storage class specifier [-Wregister]
+   register double f = sqrt(vec_dot(dest, dest));
+                   ^
+../math_vector.h: In function ‘int LAMMPS_NS::form_inv(double (&)[6], double (&)[6])’:
+../math_vector.h:225:19: warning: ISO C++1z does not allow ‘register’ storage class specifier [-Wregister]
+   register double det = form_det(m);
+                   ^~~
+../math_vector.h: In function ‘double LAMMPS_NS::form4_det(double (&)[10])’:
+../math_vector.h:380:19: warning: ISO C++1z does not allow ‘register’ storage class specifier [-Wregister]
+   register double f = m[6]*m[7]-m[5]*m[8];
+                   ^
+../math_vector.h: In function ‘int LAMMPS_NS::form4_inv(double (&)[10], double (&)[10])’:
+../math_vector.h:390:19: warning: ISO C++1z does not allow ‘register’ storage class specifier [-Wregister]
+   register double det = form4_det(m);
+                   ^~~
+In file included from ../style_tangential_model.h:2:0,
+                 from ../contact_models.h:67,
+                 from ../granular_styles.h:75,
+                 from ../lammps.cpp:87:
+../tangential_model_history.h: In member function ‘virtual void LIGGGHTS::ContactModels::TangentialModel<2>::surfacesIntersect(const LIGGGHTS::ContactModels::SurfacesIntersectData&, LIGGGHTS::ContactModels::ForceData&, LIGGGHTS::ContactModels::ForceData&)’:
+../tangential_model_history.h:314:123: warning: ‘*((void*)& torque_j +16)’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+                     const double dTorqueDamp_j[3] = {torque_j[0]-torque_ela_j[0], torque_j[1]-torque_ela_j[1], torque_j[2]-torque_ela_j[2]};
+                                                                                                                ~~~~~~~~~~~^~~~~~~~~~~~~~~~
+../tangential_model_history.h:314:65: warning: ‘torque_j’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+                     const double dTorqueDamp_j[3] = {torque_j[0]-torque_ela_j[0], torque_j[1]-torque_ela_j[1], torque_j[2]-torque_ela_j[2]};
+                                                      ~~~~~~~~~~~^~~~~~~~~~~~~~~~
+../tangential_model_history.h:314:94: warning: ‘*((void*)& torque_j +8)’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+                     const double dTorqueDamp_j[3] = {torque_j[0]-torque_ela_j[0], torque_j[1]-torque_ela_j[1], torque_j[2]-torque_ela_j[2]};
+                                                                                   ~~~~~~~~~~~^~~~~~~~~~~~~~~~
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../respa.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_lineforce.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_property_atom.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_rigid.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_cna_atom.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_property_atom_tracer.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../input_multisphere.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_nve_sph.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_external.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../dump_mesh_stl.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_gravity.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../neighbor.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_massflow_mesh_sieve.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_property_atom.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../thermo.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../modified_andrew.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../write_restart.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../velocity.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_aveforce.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../min_cg.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../procmap.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_continuum_weighted.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../cfd_datacoupling_file.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_nve.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../pair.cpp
+../pair.cpp: In member function ‘virtual void LAMMPS_NS::Pair::init_tables_disp(double)’:
+../pair.cpp:569:21: warning: ISO C++1z does not allow ‘register’ storage class specifier [-Wregister]
+     register double x2 = g2*rsq, a2 = 1.0/x2;
+                     ^~
+../pair.cpp:569:34: warning: ISO C++1z does not allow ‘register’ storage class specifier [-Wregister]
+     register double x2 = g2*rsq, a2 = 1.0/x2;
+                                  ^~
+../pair.cpp:615:21: warning: ISO C++1z does not allow ‘register’ storage class specifier [-Wregister]
+     register double x2 = g2*rsq, a2 = 1.0/x2;
+                     ^~
+../pair.cpp:615:34: warning: ISO C++1z does not allow ‘register’ storage class specifier [-Wregister]
+     register double x2 = g2*rsq, a2 = 1.0/x2;
+                                  ^~
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_atom_molecule.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_insert.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_erotate_sphere.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_insert_stream.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_erotate_superquadric.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../delete_bonds.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../dump_local_gran_vtk.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../finish.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../variable.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../pair_line_lj.cpp
+../pair_line_lj.cpp: In member function ‘virtual void LAMMPS_NS::PairLineLJ::compute(int, int)’:
+../pair_line_lj.cpp:105:50: warning: unused variable ‘ti’ [-Wunused-variable]
+   double xi[2],xj[2],fi[2],fj[2],dxi,dxj,dyi,dyj,ti,tj;
+                                                  ^~
+../pair_line_lj.cpp:105:53: warning: unused variable ‘tj’ [-Wunused-variable]
+   double xi[2],xj[2],fi[2],fj[2],dxi,dxj,dyi,dyj,ti,tj;
+                                                     ^~
+../pair_line_lj.cpp: In member function ‘void LAMMPS_NS::PairLineLJ::discretize(int, double)’:
+../pair_line_lj.cpp:476:11: warning: unused variable ‘x’ [-Wunused-variable]
+   double *x = atom->x[i];
+           ^
+../pair_line_lj.cpp: In member function ‘virtual void LAMMPS_NS::PairLineLJ::compute(int, int)’:
+../pair_line_lj.cpp:329:27: warning: ‘fpair’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+       if (evflag) ev_tally(i,j,nlocal,newton_pair,
+                   ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+                            evdwl,0.0,fpair,delx,dely,delz);
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../pair_line_lj.cpp:301:21: warning: ‘fj[1]’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+             f[j][1] += fj[1];
+             ~~~~~~~~^~~~~~~~
+../pair_line_lj.cpp:300:21: warning: ‘fj[0]’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+             f[j][0] += fj[0];
+             ~~~~~~~~^~~~~~~~
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../dump_custom_vtk.cpp
+In file included from /usr/include/vtk-6.3/vtkTriangle.h:26:0,
+                 from ../dump_custom_vtk.cpp:86:
+/usr/include/vtk-6.3/vtkMath.h:664:3: warning: multi-line comment [-Wcomment]
+   // a & b \\
+   ^
+/usr/include/vtk-6.3/vtkMath.h:668:3: warning: multi-line comment [-Wcomment]
+   // 1 & 0 \\
+   ^
+/usr/include/vtk-6.3/vtkMath.h:671:3: warning: multi-line comment [-Wcomment]
+   // a & b \\
+   ^
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../image.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_ave_histo.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../dump_mesh.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../region_cone.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../improper.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_fiber_spring_simple.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../reader_xyz.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_sph_density_continuity.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_nve_sph_stationary.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../min_linesearch.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_spring_self.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_check_timestep_gran.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../dump_decomposition_vtk.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_freeze.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../region_mesh_tet.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../create_atoms.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../input_mesh_tri.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../atom_vec.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../neigh_gran.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../superquadric.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_stress_atom.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_respa.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../integrate.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../modify.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../tri_mesh_planar.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../cfd_datacoupling.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_spring.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../cfd_regionmodel_none.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../bond_harmonic.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../dump_image.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_erotate_sphere_atom.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_template_multiplespheres.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../atom_vec_sphere.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../error.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_wall_region_sph.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_nve_asphere_base.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../signal_handling.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_cfd_coupling.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../delete_atoms.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../atom_vec_charge.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../random_mars.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../properties.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_displace_atom.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../dump_custom.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../multisphere.cpp
+In file included from ../general_container.h:187:0,
+                 from ../scalar_container.h:47,
+                 from ../container.h:47,
+                 from ../custom_value_tracker.h:50,
+                 from ../multisphere.h:46,
+                 from ../multisphere.cpp:44:
+../general_container_I.h: In instantiation of ‘bool LAMMPS_NS::GeneralContainer<T, NUM_VEC, LEN_VEC>::calcMeanSquareFromContainer() [with T = bool; int NUM_VEC = 1; int LEN_VEC = 3]’:
+../multisphere.cpp:671:1:   required from here
+../general_container_I.h:442:53: warning: ‘*’ in boolean context, suggest ‘&&’ instead [-Wint-in-bool-context]
+                         arr_[n][i][j] = contribution*contribution;
+                                         ~~~~~~~~~~~~^~~~~~~~~~~~~
+../general_container_I.h:459:53: warning: ‘*’ in boolean context, suggest ‘&&’ instead [-Wint-in-bool-context]
+                         arr_[n][i][j] = contribution*contribution;
+                                         ~~~~~~~~~~~~^~~~~~~~~~~~~
+../general_container_I.h: In instantiation of ‘void LAMMPS_NS::GeneralContainer<T, NUM_VEC, LEN_VEC>::scale(double) [with T = bool; int NUM_VEC = 1; int LEN_VEC = 3]’:
+../multisphere.cpp:671:1:   required from here
+../general_container_I.h:615:31: warning: ‘*’ in boolean context, suggest ‘&&’ instead [-Wint-in-bool-context]
+                 arr_[i][j][k] *= factorApplied;
+                 ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../dump.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_ke_multisphere.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_property_molecule.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_multisphere_comm.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_particledistribution_discrete.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_contact_atom_gran.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_cfd_coupling_convection_species.cpp
+../fix_cfd_coupling_convection_species.cpp: In constructor ‘LAMMPS_NS::FixCfdCouplingConvectionSpecies::FixCfdCouplingConvectionSpecies(LAMMPS_NS::LAMMPS*, int, char**)’:
+../fix_cfd_coupling_convection_species.cpp:64:1: warning: ‘Source’ directive writing 6 bytes into a region of size between 1 and 128 [-Wformat-overflow=]
+ FixCfdCouplingConvectionSpecies::FixCfdCouplingConvectionSpecies(LAMMPS *lmp, int narg, char **arg) :  Fix(lmp, narg, arg)
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/stdio.h:862:0,
+                 from ../lammps.h:49,
+                 from ../pointers.h:64,
+                 from ../atom.h:49,
+                 from ../fix_cfd_coupling_convection_species.cpp:43:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:34:43: note: ‘__builtin___sprintf_chk’ output between 7 and 134 bytes into a destination of size 128
+       __bos (__s), __fmt, __va_arg_pack ());
+                                           ^
+../fix_cfd_coupling_convection_species.cpp:64:1: warning: ‘Flux’ directive writing 4 bytes into a region of size between 1 and 128 [-Wformat-overflow=]
+ FixCfdCouplingConvectionSpecies::FixCfdCouplingConvectionSpecies(LAMMPS *lmp, int narg, char **arg) :  Fix(lmp, narg, arg)
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/stdio.h:862:0,
+                 from ../lammps.h:49,
+                 from ../pointers.h:64,
+                 from ../atom.h:49,
+                 from ../fix_cfd_coupling_convection_species.cpp:43:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:34:43: note: ‘__builtin___sprintf_chk’ output between 5 and 132 bytes into a destination of size 128
+       __bos (__s), __fmt, __va_arg_pack ());
+                                           ^
+../fix_cfd_coupling_convection_species.cpp:64:1: warning: ‘Capacity’ directive writing 8 bytes into a region of size between 1 and 128 [-Wformat-overflow=]
+ FixCfdCouplingConvectionSpecies::FixCfdCouplingConvectionSpecies(LAMMPS *lmp, int narg, char **arg) :  Fix(lmp, narg, arg)
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/stdio.h:862:0,
+                 from ../lammps.h:49,
+                 from ../pointers.h:64,
+                 from ../atom.h:49,
+                 from ../fix_cfd_coupling_convection_species.cpp:43:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:34:43: note: ‘__builtin___sprintf_chk’ output between 9 and 136 bytes into a destination of size 128
+       __bos (__s), __fmt, __va_arg_pack ());
+                                           ^
+../fix_cfd_coupling_convection_species.cpp:64:1: warning: ‘STE’ directive writing 3 bytes into a region of size between 1 and 128 [-Wformat-overflow=]
+ FixCfdCouplingConvectionSpecies::FixCfdCouplingConvectionSpecies(LAMMPS *lmp, int narg, char **arg) :  Fix(lmp, narg, arg)
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/stdio.h:862:0,
+                 from ../lammps.h:49,
+                 from ../pointers.h:64,
+                 from ../atom.h:49,
+                 from ../fix_cfd_coupling_convection_species.cpp:43:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:34:43: note: ‘__builtin___sprintf_chk’ output between 4 and 131 bytes into a destination of size 128
+       __bos (__s), __fmt, __va_arg_pack ());
+                                           ^
+../fix_cfd_coupling_convection_species.cpp:64:1: warning: ‘TotalFlux’ directive writing 9 bytes into a region of size between 1 and 128 [-Wformat-overflow=]
+ FixCfdCouplingConvectionSpecies::FixCfdCouplingConvectionSpecies(LAMMPS *lmp, int narg, char **arg) :  Fix(lmp, narg, arg)
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/stdio.h:862:0,
+                 from ../lammps.h:49,
+                 from ../pointers.h:64,
+                 from ../atom.h:49,
+                 from ../fix_cfd_coupling_convection_species.cpp:43:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:34:43: note: ‘__builtin___sprintf_chk’ output between 10 and 137 bytes into a destination of size 128
+       __bos (__s), __fmt, __va_arg_pack ());
+                                           ^
+../fix_cfd_coupling_convection_species.cpp:64:1: warning: ‘Fluid’ directive writing 5 bytes into a region of size between 1 and 128 [-Wformat-overflow=]
+ FixCfdCouplingConvectionSpecies::FixCfdCouplingConvectionSpecies(LAMMPS *lmp, int narg, char **arg) :  Fix(lmp, narg, arg)
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/stdio.h:862:0,
+                 from ../lammps.h:49,
+                 from ../pointers.h:64,
+                 from ../atom.h:49,
+                 from ../fix_cfd_coupling_convection_species.cpp:43:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:34:43: note: ‘__builtin___sprintf_chk’ output between 6 and 133 bytes into a destination of size 128
+       __bos (__s), __fmt, __va_arg_pack ());
+                                           ^
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../minimize.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_lb_coupling_onetoone.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../citeme.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../domain.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_mesh.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_dt_reset.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_check_timestep_sph.cpp
+../fix_check_timestep_sph.cpp:63:0: warning: "BIG" redefined
+ #define BIG 1000000.
+ 
+In file included from ../region_neighbor_list_I.h:48:0,
+                 from ../region_neighbor_list.h:183,
+                 from ../surface_mesh.h:54,
+                 from ../tri_mesh.h:47,
+                 from ../fix_mesh_surface.h:56,
+                 from ../fix_wall_gran.h:53,
+                 from ../fix_check_timestep_sph.cpp:52:
+../domain_definitions.h:60:0: note: this is the location of the previous definition
+ #define BIG 1.0e20
+ 
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_addforce.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_region_variable.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../mesh_module.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../set.cpp
+../set.cpp: In member function ‘void LAMMPS_NS::Set::set(int)’:
+../set.cpp:910:16: warning: unused variable ‘vol’ [-Wunused-variable]
+         double vol = atom->volume[i];
+                ^~~
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../container_base.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_nve_noforce.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../dump_local.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_mesh_surface.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_neighlist_mesh.cpp
+In file included from ../fix_neighlist_mesh.cpp:45:0:
+../fix_neighlist_mesh.h: In member function ‘virtual void LAMMPS_NS::FixNeighlistMesh::initializeNeighlist()’:
+../fix_neighlist_mesh.h:72:8: warning: ‘<anonymous>.LAMMPS_NS::TriangleNeighlist::boundary’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+ struct TriangleNeighlist {
+        ^~~~~~~~~~~~~~~~~
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_enforce2d.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_store_force.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_deform_check.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../neigh_half_multi.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../bounding_box.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../pair_gran_proxy.cpp
+In file included from ../rolling_model_luding.h:48:0,
+                 from ../style_rolling_model.h:6,
+                 from ../contact_models.h:68,
+                 from ../pair_gran_proxy.cpp:50:
+../math_vector.h: In function ‘void LAMMPS_NS::vec_norm(double (&)[3])’:
+../math_vector.h:97:19: warning: ISO C++1z does not allow ‘register’ storage class specifier [-Wregister]
+   register double f = sqrt(vec_dot(dest, dest));
+                   ^
+../math_vector.h: In function ‘int LAMMPS_NS::form_inv(double (&)[6], double (&)[6])’:
+../math_vector.h:225:19: warning: ISO C++1z does not allow ‘register’ storage class specifier [-Wregister]
+   register double det = form_det(m);
+                   ^~~
+../math_vector.h: In function ‘double LAMMPS_NS::form4_det(double (&)[10])’:
+../math_vector.h:380:19: warning: ISO C++1z does not allow ‘register’ storage class specifier [-Wregister]
+   register double f = m[6]*m[7]-m[5]*m[8];
+                   ^
+../math_vector.h: In function ‘int LAMMPS_NS::form4_inv(double (&)[10], double (&)[10])’:
+../math_vector.h:390:19: warning: ISO C++1z does not allow ‘register’ storage class specifier [-Wregister]
+   register double det = form4_det(m);
+                   ^~~
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_massflow_mesh.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../angle.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../library_cfd_coupling.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../dump_atom_vtk.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../pair_hybrid_overlay.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_sph.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../rotate.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_multicontact_halfspace.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_cfd_coupling_convection_impl.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_ave_euler.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_ave_time.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_nve_asphere.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../info.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../write_dump.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../input_mesh_tet.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_property_global.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_minimize.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../atom_vec_full.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_template_multisphere.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../pair_sph_artvisc_tenscorr.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_contact_history.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../neigh_derive.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../particleToInsert.cpp
+../particleToInsert.cpp:179:1: warning: "/*" within comment [-Wcomment]
+ /*
+  
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../region_prism.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../verlet.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_reduce.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../atom_vec_superquadric.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_print.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../kspace.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../atom_vec_ellipsoid.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../dump_mesh_vtm.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../atom_vec_hybrid.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../dump_vtk.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_inertia_molecule.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../global_properties.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../atom_map.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_temp.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_momentum.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_multisphere_break.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_nparticles_tracer_region.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_insert_rate_region.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_adapt.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_contact_history_mesh.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../run.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../group.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../pair_sph.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_contact_property_atom.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../mesh_module_stress_servo.cpp
+../mesh_module_stress_servo.cpp:67:0: warning: "BIG" redefined
+ #define BIG 1000000.
+ 
+In file included from ../region_neighbor_list_I.h:48:0,
+                 from ../region_neighbor_list.h:183,
+                 from ../surface_mesh.h:54,
+                 from ../tri_mesh.h:47,
+                 from ../mesh_module.h:44,
+                 from ../mesh_module_stress.h:54,
+                 from ../mesh_module_stress_servo.h:59,
+                 from ../mesh_module_stress_servo.cpp:50:
+../domain_definitions.h:60:0: note: this is the location of the previous definition
+ #define BIG 1.0e20
+ 
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../math_extra_liggghts_nonspherical.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_wall_sph.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../dump_xyz.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../region_union.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../bond_hybrid.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../modify_liggghts.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../dump_mesh_vtk.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../region_neighbor_list.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_gyration.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../contact_models.cpp
+In file included from ../rolling_model_luding.h:48:0,
+                 from ../style_rolling_model.h:6,
+                 from ../contact_models.h:68,
+                 from ../contact_models.cpp:72:
+../math_vector.h: In function ‘void LAMMPS_NS::vec_norm(double (&)[3])’:
+../math_vector.h:97:19: warning: ISO C++1z does not allow ‘register’ storage class specifier [-Wregister]
+   register double f = sqrt(vec_dot(dest, dest));
+                   ^
+../math_vector.h: In function ‘int LAMMPS_NS::form_inv(double (&)[6], double (&)[6])’:
+../math_vector.h:225:19: warning: ISO C++1z does not allow ‘register’ storage class specifier [-Wregister]
+   register double det = form_det(m);
+                   ^~~
+../math_vector.h: In function ‘double LAMMPS_NS::form4_det(double (&)[10])’:
+../math_vector.h:380:19: warning: ISO C++1z does not allow ‘register’ storage class specifier [-Wregister]
+   register double f = m[6]*m[7]-m[5]*m[8];
+                   ^
+../math_vector.h: In function ‘int LAMMPS_NS::form4_inv(double (&)[10], double (&)[10])’:
+../math_vector.h:390:19: warning: ISO C++1z does not allow ‘register’ storage class specifier [-Wregister]
+   register double det = form4_det(m);
+                   ^~~
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../comm.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_buoyancy.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../random.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../compute_cluster_atom.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../dihedral_hybrid.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../fix_ave_atom.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC     -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c ../region_block.cpp
+mpicxx -lstdc++ -O2  compute_erotate.o multisphere_parallel.o neigh_respa.o atom.o particleToInsert_multisphere.o sort_buffer.o fix_heat_gran_conduction.o compute_ke_atom.o fix_efield.o particleToInsertSuperquadric.o fix_sph_pressure.o fix_multisphere.o min.o run_time.o fix_drag.o fix_cfd_coupling_force.o compute_com_molecule.o fix_sph_density_summation.o mesh_mover_linear.o fix_heat_gran.o fix_scalar_transport_equation.o neigh_half_nsq.o tet_mesh.o fix_cfd_coupling_convection.o lattice.o dump_movie.o fix_ave_spatial.o compute_rdf.o fix_template_sphere.o input.o fix_nve_superquadric.o fix_nve_asphere_noforce.o region_plane.o compute_centro_atom.o fix_property_atom_tracer_stream.o compute_erotate_multisphere.o mesh_module_stress.o force.o fix_wall_region.o fix_nve_limit.o create_box.o dump_custom_vtm.o fix_store_state.o compute_ke.o pair_soft.o cfd_datacoupling_mpi.o displace_atoms.o fix_wall.o library.o pair_hybrid.o compute_bond_local.o angle_hybrid.o atom_vec_line.o fix_contact_property_atom_wall.o compute_pressure.o fix_nve_line.o compute_pe_atom.o property_registry.o random_park.o custom_value_tracker.o fix_viscous.o neigh_stencil.o fix_sph_density_corr.o atom_vec_sph_var.o mesh_module_liquidtransfer.o fix_spring_rg.o compute_gyration_molecule.o timer.o dump_euler_vtk.o tri_mesh.o neigh_bond.o dump_particle.o math_extra.o write_data.o neigh_dummy.o fix_move.o fix_nve_sphere.o fix_template_superquadric.o atom_vec_tri.o atom_vec_sphere_w.o compute_property_local.o fix_wall_gran.o special.o fix_base_liggghts.o region_cylinder.o memory.o fix_setforce.o atom_vec_sph.o fix_move_mesh.o replicate.o read_dump.o mesh_mover_rotation.o fix_deform.o pair_gran.o atom_vec_atomic.o compute_pair_gran_local.o fix_read_restart.o compute_com.o reader.o improper_hybrid.o dump_local_gran.o neigh_full.o fix_box_relax.o read_restart.o compute_erotate_asphere.o fix_store.o compute_group_group.o compute_msd.o atom_vec_molecular.o reader_native.o universe.o fix_cfd_coupling_force_implicit.o irregular.o update.o change_box.o compute_reduce_region.o granular_pair_style.o compute_pe.o granular_wall.o compute_contact_atom.o fix_insert_pack.o region_sphere.o region_intersect.o output.o region_wedge.o neigh_half_bin.o fix_property_atom_region_tracer.o neigh_list.o compute_msd_molecule.o fix_planeforce.o fix_ave_correlate.o bond.o compute_coord_atom.o neigh_request.o compute_slice.o main.o compute_rigid.o math_extra_liggghts_superquadric.o read_data.o fix_diam_max.o dihedral.o region.o lammps.o respa.o fix_lineforce.o compute_property_atom.o fix_rigid.o compute_cna_atom.o fix_property_atom_tracer.o input_multisphere.o fix_nve_sph.o fix_external.o dump_mesh_stl.o fix_gravity.o neighbor.o fix_massflow_mesh_sieve.o fix_property_atom.o thermo.o modified_andrew.o write_restart.o velocity.o fix_aveforce.o min_cg.o procmap.o fix_continuum_weighted.o cfd_datacoupling_file.o fix_nve.o pair.o compute_atom_molecule.o fix_insert.o compute_erotate_sphere.o fix_insert_stream.o compute_erotate_superquadric.o delete_bonds.o dump_local_gran_vtk.o finish.o variable.o pair_line_lj.o dump_custom_vtk.o image.o fix_ave_histo.o dump_mesh.o region_cone.o improper.o fix_fiber_spring_simple.o reader_xyz.o fix_sph_density_continuity.o fix_nve_sph_stationary.o min_linesearch.o fix_spring_self.o fix_check_timestep_gran.o dump_decomposition_vtk.o fix_freeze.o region_mesh_tet.o create_atoms.o input_mesh_tri.o atom_vec.o neigh_gran.o superquadric.o compute_stress_atom.o fix_respa.o integrate.o modify.o tri_mesh_planar.o cfd_datacoupling.o fix_spring.o cfd_regionmodel_none.o bond_harmonic.o dump_image.o compute_erotate_sphere_atom.o fix_template_multiplespheres.o atom_vec_sphere.o error.o fix_wall_region_sph.o fix_nve_asphere_base.o signal_handling.o fix_cfd_coupling.o delete_atoms.o fix.o atom_vec_charge.o random_mars.o properties.o compute_displace_atom.o dump_custom.o multisphere.o dump.o compute_ke_multisphere.o compute_property_molecule.o fix_multisphere_comm.o fix_particledistribution_discrete.o compute_contact_atom_gran.o fix_cfd_coupling_convection_species.o minimize.o fix_lb_coupling_onetoone.o citeme.o domain.o fix_mesh.o fix_dt_reset.o fix_check_timestep_sph.o fix_addforce.o fix_region_variable.o mesh_module.o set.o container_base.o fix_nve_noforce.o dump_local.o fix_mesh_surface.o fix_neighlist_mesh.o fix_enforce2d.o fix_store_force.o fix_deform_check.o neigh_half_multi.o bounding_box.o pair_gran_proxy.o fix_massflow_mesh.o angle.o library_cfd_coupling.o dump_atom_vtk.o pair_hybrid_overlay.o fix_sph.o rotate.o fix_multicontact_halfspace.o fix_cfd_coupling_convection_impl.o fix_ave_euler.o fix_ave_time.o fix_nve_asphere.o info.o write_dump.o input_mesh_tet.o fix_property_global.o fix_minimize.o atom_vec_full.o fix_template_multisphere.o pair_sph_artvisc_tenscorr.o fix_contact_history.o neigh_derive.o particleToInsert.o region_prism.o verlet.o compute_reduce.o atom_vec_superquadric.o fix_print.o kspace.o atom_vec_ellipsoid.o dump_mesh_vtm.o atom_vec_hybrid.o dump_vtk.o compute_inertia_molecule.o global_properties.o atom_map.o compute_temp.o fix_momentum.o fix_multisphere_break.o compute_nparticles_tracer_region.o fix_insert_rate_region.o fix_adapt.o fix_contact_history_mesh.o run.o group.o pair_sph.o fix_contact_property_atom.o mesh_module_stress_servo.o math_extra_liggghts_nonspherical.o fix_wall_sph.o dump_xyz.o region_union.o bond_hybrid.o modify_liggghts.o dump_mesh_vtk.o region_neighbor_list.o compute_gyration.o contact_models.o compute.o comm.o fix_buoyancy.o random.o compute_cluster_atom.o dihedral_hybrid.o fix_ave_atom.o region_block.o   -Wl,-rpath,/usr/lib/x86_64-linux-gnu/  -L/usr/lib/x86_64-linux-gnu/      -lvtkCommonCore-6.3 -lvtkIOCore-6.3 -lvtkIOXML-6.3 -lvtkIOLegacy-6.3 -lvtkIOImage-6.3 -lvtkCommonDataModel-6.3 -lvtkParallelCore-6.3 -lvtkParallelMPI-6.3 -lvtkCommonExecutionModel-6.3 -lvtkFiltersCore-6.3 -lvtksys-6.3 -lvtkCommonMisc-6.3 -lvtkCommonTransforms-6.3 -lvtkCommonMath-6.3 -lvtkIOXMLParser-6.3 -lvtkCommonSystem-6.3 -lvtkDICOMParser-6.3 -lvtkmetaio-6.3 -lvtkIOParallelXML-6.3   -o ../lmp_auto
+size ../lmp_auto
+   text	   data	    bss	    dec	    hex	filename
+8510889	 226880	    856	8738625	 855741	../lmp_auto
+make[1]: Leaving directory '/home/eadaymo/LIGGGHTS/LIGGGHTS-PUBLIC/src/Obj_auto'
+make[1]: Entering directory '/home/eadaymo/LIGGGHTS/LIGGGHTS-PUBLIC/src/Obj_auto'
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC -fPIC    -I/usr/include/vtk-6.3 -DLAMMPS_VTK -DSUPERQUADRIC_ACTIVE_FLAG -DNONSPHERICAL_ACTIVE_FLAG   -c universe.cpp
+mpicxx -funroll-loops -fstrict-aliasing -Wall -Wno-unused-result -O2  -std=c++17 -fPIC -fPIC -shared   -o ../liblmp_auto.so \
+        multisphere_parallel.o fix_insert_pack.o neigh_respa.o atom.o particleToInsert_multisphere.o sort_buffer.o fix_heat_gran_conduction.o compute_ke_atom.o fix_efield.o particleToInsertSuperquadric.o fix_sph_pressure.o fix_multisphere.o min.o run_time.o fix_drag.o fix_cfd_coupling_force.o compute_com_molecule.o fix_sph_density_summation.o mesh_mover_linear.o fix_heat_gran.o fix_scalar_transport_equation.o neigh_half_nsq.o tet_mesh.o fix_cfd_coupling_convection.o lattice.o dump_movie.o fix_ave_spatial.o compute_rdf.o fix_template_sphere.o input.o fix_nve_superquadric.o fix_nve_asphere_noforce.o region_plane.o compute_centro_atom.o fix_property_atom_tracer_stream.o compute_erotate_multisphere.o mesh_module_stress.o force.o fix_wall_region.o fix_nve_limit.o create_box.o dump_custom_vtm.o fix_store_state.o compute_ke.o pair_soft.o cfd_datacoupling_mpi.o displace_atoms.o fix_wall.o library.o pair_hybrid.o compute_bond_local.o angle_hybrid.o atom_vec_line.o fix_contact_property_atom_wall.o compute_pressure.o fix_nve_line.o compute_pe_atom.o property_registry.o random_park.o custom_value_tracker.o fix_viscous.o neigh_stencil.o fix_sph_density_corr.o atom_vec_sph_var.o mesh_module_liquidtransfer.o fix_spring_rg.o compute_gyration_molecule.o timer.o dump_euler_vtk.o tri_mesh.o neigh_bond.o dump_particle.o math_extra.o write_data.o neigh_dummy.o fix_move.o fix_nve_sphere.o fix_template_superquadric.o atom_vec_tri.o atom_vec_sphere_w.o compute_property_local.o fix_wall_gran.o special.o fix_base_liggghts.o region_cylinder.o memory.o fix_setforce.o atom_vec_sph.o fix_move_mesh.o replicate.o read_dump.o mesh_mover_rotation.o fix_deform.o pair_gran.o atom_vec_atomic.o compute_pair_gran_local.o fix_read_restart.o compute_com.o reader.o improper_hybrid.o dump_local_gran.o neigh_full.o fix_box_relax.o read_restart.o fix_store.o compute_group_group.o compute_msd.o atom_vec_molecular.o reader_native.o universe.o fix_cfd_coupling_force_implicit.o irregular.o update.o change_box.o compute_reduce_region.o granular_pair_style.o compute_pe.o granular_wall.o compute_contact_atom.o region_sphere.o region_intersect.o output.o region_wedge.o neigh_half_bin.o fix_property_atom_region_tracer.o neigh_list.o compute_msd_molecule.o fix_planeforce.o fix_ave_correlate.o bond.o compute_coord_atom.o neigh_request.o compute_slice.o compute_rigid.o math_extra_liggghts_superquadric.o read_data.o fix_diam_max.o dihedral.o region.o lammps.o respa.o fix_lineforce.o compute_property_atom.o fix_rigid.o compute_cna_atom.o fix_property_atom_tracer.o input_multisphere.o fix_nve_sph.o fix_external.o dump_mesh_stl.o fix_gravity.o neighbor.o fix_massflow_mesh_sieve.o fix_property_atom.o thermo.o modified_andrew.o write_restart.o velocity.o fix_aveforce.o fix_contact_property_atom.o min_cg.o procmap.o fix_continuum_weighted.o cfd_datacoupling_file.o fix_nve.o pair.o compute_atom_molecule.o fix_insert.o compute_erotate_sphere.o fix_insert_stream.o compute_erotate_superquadric.o delete_bonds.o dump_local_gran_vtk.o finish.o variable.o pair_line_lj.o dump_custom_vtk.o image.o fix_ave_histo.o dump_mesh.o region_cone.o improper.o fix_fiber_spring_simple.o reader_xyz.o fix_sph_density_continuity.o fix_nve_sph_stationary.o min_linesearch.o fix_spring_self.o fix_check_timestep_gran.o dump_decomposition_vtk.o compute_erotate.o fix_freeze.o region_mesh_tet.o create_atoms.o input_mesh_tri.o atom_vec.o neigh_gran.o superquadric.o compute_stress_atom.o fix_respa.o integrate.o modify.o tri_mesh_planar.o cfd_datacoupling.o fix_spring.o cfd_regionmodel_none.o bond_harmonic.o dump_image.o compute_erotate_sphere_atom.o fix_template_multiplespheres.o atom_vec_sphere.o info.o error.o fix_wall_region_sph.o fix_nve_asphere_base.o signal_handling.o fix_cfd_coupling.o delete_atoms.o fix.o atom_vec_charge.o random_mars.o properties.o compute_displace_atom.o dump_custom.o multisphere.o dump.o compute_ke_multisphere.o compute_property_molecule.o fix_multisphere_comm.o fix_particledistribution_discrete.o compute_contact_atom_gran.o fix_cfd_coupling_convection_species.o minimize.o fix_lb_coupling_onetoone.o citeme.o domain.o fix_mesh.o fix_dt_reset.o fix_check_timestep_sph.o fix_addforce.o fix_region_variable.o mesh_module.o set.o container_base.o fix_nve_noforce.o dump_local.o fix_mesh_surface.o fix_neighlist_mesh.o fix_enforce2d.o fix_store_force.o fix_deform_check.o neigh_half_multi.o bounding_box.o pair_gran_proxy.o fix_massflow_mesh.o angle.o library_cfd_coupling.o dump_atom_vtk.o pair_hybrid_overlay.o fix_sph.o rotate.o fix_multicontact_halfspace.o fix_cfd_coupling_convection_impl.o fix_ave_euler.o fix_ave_time.o fix_nve_asphere.o write_dump.o input_mesh_tet.o fix_property_global.o fix_minimize.o atom_vec_full.o fix_template_multisphere.o atom_vec_hybrid.o pair_sph_artvisc_tenscorr.o fix_contact_history.o neigh_derive.o particleToInsert.o region_prism.o verlet.o compute_reduce.o atom_vec_superquadric.o fix_print.o kspace.o atom_vec_ellipsoid.o dump_mesh_vtm.o compute_erotate_asphere.o dump_vtk.o compute_inertia_molecule.o global_properties.o atom_map.o compute_temp.o fix_momentum.o fix_multisphere_break.o compute_nparticles_tracer_region.o fix_insert_rate_region.o fix_adapt.o fix_contact_history_mesh.o run.o group.o pair_sph.o mesh_module_stress_servo.o math_extra_liggghts_nonspherical.o fix_wall_sph.o dump_xyz.o region_union.o bond_hybrid.o modify_liggghts.o dump_mesh_vtk.o region_neighbor_list.o compute_gyration.o contact_models.o compute.o comm.o fix_buoyancy.o random.o compute_cluster_atom.o dihedral_hybrid.o fix_ave_atom.o region_block.o    -lvtkCommonCore-6.3 -lvtkIOCore-6.3 -lvtkIOXML-6.3 -lvtkIOLegacy-6.3 -lvtkIOImage-6.3 -lvtkCommonDataModel-6.3 -lvtkParallelCore-6.3 -lvtkParallelMPI-6.3 -lvtkCommonExecutionModel-6.3 -lvtkFiltersCore-6.3 -lvtksys-6.3 -lvtkCommonMisc-6.3 -lvtkCommonTransforms-6.3 -lvtkCommonMath-6.3 -lvtkIOXMLParser-6.3 -lvtkCommonSystem-6.3 -lvtkDICOMParser-6.3 -lvtkmetaio-6.3 -lvtkIOParallelXML-6.3   -Wl,-rpath,/usr/lib/x86_64-linux-gnu/  -L/usr/lib/x86_64-linux-gnu/  
+make[1]: Leaving directory '/home/eadaymo/LIGGGHTS/LIGGGHTS-PUBLIC/src/Obj_auto'

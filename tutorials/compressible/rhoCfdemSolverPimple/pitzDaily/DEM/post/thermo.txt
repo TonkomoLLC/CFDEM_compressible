@@ -1,0 +1,2 @@
+    Step    Atoms         KinEng            rke         Volume       centerOf       explDrag       explDrag       explDrag        cfd2[1]        cfd2[2]        cfd2[3] 
+   10000    10000  7.4569765e-08  6.0588027e-08      5.076e-05   0.0075796412              0              0              0              0              0              0 
