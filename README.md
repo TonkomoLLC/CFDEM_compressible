@@ -26,7 +26,7 @@ Compressible, Isothermal, CFDEM coupled solver, with PIMPLE algorithm and scalar
 
 # Installation
 - Place the contents of the solver directory in `$CFDEM_SOLVER_DIR`
-- Ensure the [compressible CFDEM library](https://git.scc.kit.edu/en7495/CFDEM-rhoCfdemSolverPimple/tree/master/CFDEM-Compressible_Lagrangian_Library) is installed.
+- Ensure the [compressible CFDEM library](https://github.com/TonkomoLLC/CFDEM_compressible/tree/master/CFDEM-Compressible_Lagrangian_Library) is installed.
 - Within the rhoCfdemSolverPimple directory, type `wclean` then `wmake`
 - Place the contents of the tutorial directory in `$CFDEM_TUT_DIR`
 - Optionally, add `rhoCfdemSolverPimple/dir` to the last line of solver-list.txt, located in `$CFDEM_SRC_DIR/lagrangian/cfdemParticle/etc`.
