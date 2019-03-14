@@ -211,6 +211,27 @@ volScalarField DpDt =
 //    mesh.solutionDict().subDict("PIMPLE").lookup("pMin")
 //);
 
+// TODO - at a future date come up with a better dictionary name than pimple2... 
+    fvSolution solutionDict(runTime);
+
+    const dictionary& pimple2 = solutionDict.subDict("PIMPLE");
+    
+    const int nOuterCorr =
+        pimple2.lookupOrDefault<int>("nOuterCorrectors", 1);
+
+    const int nCorr =
+        pimple2.lookupOrDefault<int>("nCorrectors", 1);
+
+    const int nNonOrthCorr =
+        pimple2.lookupOrDefault<int>("nNonOrthogonalCorrectors", 0);
+
+    const bool momentumPredictor =
+        pimple2.lookupOrDefault("momentumPredictor", true);
+
+// Not used - disabled transonic flow in the pressure equation
+//    const bool transonic =
+//        pimple2.lookupOrDefault("transonic", false);
+
 
 Info<< "Creating field kinetic energy K\n" << endl;
 volScalarField K("K", 0.5*magSqr(U));

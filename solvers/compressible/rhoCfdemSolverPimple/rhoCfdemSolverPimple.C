@@ -115,22 +115,11 @@ bool enableCoupling;
     {
         Info<< "Time = " << runTime.timeName() << nl << endl;
 
-//version30 not checked
-//       #if defined(version30)
-//            #include "readTimeControls.H"
-//            #include "CourantNo.H"
-//            #include "setDeltaT.H"
-//        #else
-//            #include "readPIMPLEControls.H"
-//            #include "CourantNo.H"
-            #include "compressibleCourantNo.H"
-            #include "setDeltaT.H"
-//        #endif
+        p.storePrevIter();
+        rho.storePrevIter();
 
-
-//      for debugging
-//       Info << "Pimple Controls " << endl;
-//       Info << "nOuterCorrectors, nCorrectors = " << pimple.nCorrPIMPLE() << " " << pimple.nCorrPISO() << endl;
+        #include "compressibleCourantNo.H"
+        #include "setDeltaT.H"
 
 if (enableCoupling)
 {
@@ -167,67 +156,26 @@ if (enableCoupling)
         if(particleCloud.solveFlow() || !enableCoupling)
         {
 
-            if (pimple.nCorrPIMPLE() <= 1)
-            {
-                 #include "rhoEqn.H"
-                voidfractionRho = voidfraction * rho;
-            }
+            #include "rhoEqn.H"
+            voidfractionRho = voidfraction * rho;
 
         // --- Pressure-velocity PIMPLE corrector loop
-            while (pimple.loop())   
+            for (int oCorr=0; oCorr<nOuterCorr; oCorr++)
             {
-                // Momentum predictor
 
-
-// WORK AROUND
-// - fvm::Sp(fvc::ddt(voidfraction),U) --> cannot figure out how to mult by rho ...
-// So create new field that is voidfraction * rho
-// Perhaps there is a simpler solution ... but this works.
-
-
-                tmp<fvVectorMatrix> tUEqn
-                (
-                    fvm::ddt(voidfraction*rho,U) - fvm::Sp(fvc::ddt(voidfractionRho),U)
-                  + fvm::div(phi,U) - fvm::Sp(fvc::div(phi),U)
-// TODO: turbulence->divDevReff(U): this is commented out in cfdemSolverPiso.  Why?
-                  + turbulence->divDevRhoReff(U)
-                  + particleCloud.divVoidfractionTau(U, voidfraction)
-                  ==
-                  - fvm::Sp(Ksl,U)
-                );
-
-                fvVectorMatrix& UEqn = tUEqn.ref();
-
-                UEqn.relax();
-
-
-                #if defined(version30)
-                    if (pimple.momentumPredictor())
-                #else
-                    if (momentumPredictor)
-                #endif
-                {
-                    if (modelType=="B" || modelType=="Bfull")
-                        solve(UEqn == - fvc::grad(p) + Ksl*Us);
-                    else
-                        solve(UEqn == - voidfraction*fvc::grad(p) + Ksl*Us);
-                }
+                #include "UEqn.H"
 
                 #include "hEqn.H"
 
-                // --- Pressure corrector loop
-                while (pimple.correct())
+                // --- PISO loop
+                for (int corr=0; corr<nCorr; corr++)
                 {
-
                     #include "pEqn.H"
- 
                 }
             }// END --- Pressure-velocity PIMPLE corrector loop
 
-                if (pimple.turbCorr())
-                {
-                    turbulence->correct();
-                }
+//            laminarTransport.correct();  // Think this is for incompressible solver only
+            turbulence->correct();
 
         }// end solveFlow
         else

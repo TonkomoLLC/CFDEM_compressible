@@ -69,6 +69,8 @@ enableCoupling          on;
 
 ## Example #3: Compressible, no particles
 - OpenFOAM tutorial rhoPimpleFoam/pitzDaly can be reproduced with rhoCfdemSolverPimple.  See `tutorials/rhoCdemSolverPimple/pitzDaly` tutorial.
+- Left video - rhoCfdemSolverPimple (but LIGGGHTS coupling is disabled)
+- Right video - OpenFOAM 5.x rhoPimpleFoam
 
 ![](./pitzDalyWithCompressibleCFDEM.m4v)
 
