@@ -6,6 +6,13 @@ volScalarField rAUvoidfraction("(voidfraction2|A(U))",rho*rAU*voidfraction);
 surfaceScalarField rAUfvoidfraction("(voidfraction2|A(U)F)", fvc::interpolate(rAUvoidfraction));
 
 U = rAU*UEqn.H();
+phi = ( fvc::interpolate(U*rho) & mesh.Sf() )
+
+       + rAUfvoidfraction*fvc::ddtCorr(rho, U, phiByVoidfraction); // FYI,In OF-ext the equivalent is commented out for non-transonic flow
+
+
+surfaceScalarField phiS(fvc::interpolate(Us) & mesh.Sf());
+phi += rAUf*(fvc::interpolate(Ksl) * phiS);
 
 if (modelType=="A")
     rAUvoidfraction = volScalarField("(voidfraction2|A(U))",rho*rAU*voidfraction*voidfraction);
@@ -21,13 +28,6 @@ if (nCorr <= 1)
 
 // transonic part removed from code
 
-phi = ( fvc::interpolate(U*rho) & mesh.Sf() )
-
-       + rAUfvoidfraction*fvc::ddtCorr(rho, U, phiByVoidfraction); // FYI,In OF-ext the equivalent is commented out for non-transonic flow
-
-
-surfaceScalarField phiS(fvc::interpolate(Us) & mesh.Sf());
-phi += rAUf*(fvc::interpolate(Ksl) * phiS);
 
     for (int nonOrth=0; nonOrth<=nNonOrthCorr; nonOrth++)
     {
