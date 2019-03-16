@@ -23,9 +23,9 @@ boundaryField
 
     wall
     {
-//        type            fixedFluxPressure;
-//        phi             phi;
-        type            zeroGradient;
+        type            fixedFluxPressure;
+        phi             phi;
+//        type            zeroGradient;
 //        value           $internalField;
     }
 
