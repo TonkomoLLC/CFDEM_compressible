@@ -80,7 +80,8 @@ int main(int argc, char *argv[])
         #include "createTimeControls.H"
     #endif
     #include "createFields.H"
-    #include "createRadiationModel.H"
+    #include "createIncompressibleRadiationModel.H"
+//    #include "createRadiationModel.H"
     #include "createFvOptions.H"
     #include "initContinuityErrs.H"
 
@@ -111,6 +112,7 @@ bool enableCoupling;
 #endif
 #include "checkModelType.H"
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
 
     Info<< "\nStarting time loop\n" << endl;
     while (runTime.loop())
@@ -190,12 +192,12 @@ if (enableCoupling)
                 ==
                 Tsource*rho
             //    + radiation->Sh(thermo, Temp)
-            //        + radiation->ST(rhoCpRef, T)
+                + radiation->ST(rhoCpRef, Temp)
                 );
 
                 TEqn.relax();
                 TEqn.solve();
- //               radiation->correct();
+                radiation->correct();
 
                 #include "hEqn.H"
 
