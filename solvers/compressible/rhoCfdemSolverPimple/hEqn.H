@@ -3,8 +3,8 @@
 
     fvScalarMatrix EEqn
     (
-        fvm::ddt(rho, he) + fvm::div(phi, he)
-      + fvc::ddt(rho, K) + fvc::div(phi, K)
+        fvm::ddt(voidfractionRho, he) + fvm::div(phi, he)
+      + fvc::ddt(voidfractionRho, K) + fvc::div(phi, K)
       + (
             he.name() == "e"
           ? fvc::div
@@ -15,9 +15,10 @@
             )
           : -DpDt
         )
-      - fvm::laplacian(turbulence->alphaEff(), he)
+      - fvm::laplacian(turbulence->alphaEff()*voidfraction, he)
      ==
-        fvOptions(rho, he)
+        voidfractionRho*(U&g)
+      + fvOptions(rho, he)
     );
 
     EEqn.relax();
