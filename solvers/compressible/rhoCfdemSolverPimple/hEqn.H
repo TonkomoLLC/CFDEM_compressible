@@ -13,7 +13,7 @@
                 p,
                 "div(phiv,p)"
             )
-          : -DpDt
+          : -DpDt*voidfraction
         )
       - fvm::laplacian(turbulence->alphaEff()*voidfraction, he)
      ==
