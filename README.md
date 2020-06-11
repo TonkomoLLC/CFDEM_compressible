@@ -83,6 +83,9 @@ enableCoupling          on;
 ## Example #5: SettlingTestMPI
 - CFDEM tutorial settlingTestMPI returns a similar result to cfdemSolverPiso.  See `tutorials/rhoCfdemSolverPimple/settlingTestMPI`.
 
+![RhoPimpleFoamResults](./rhoCfdemSolverPimple_settlingTestMPI.png)
+
+
 # Testing rhoCfdemSolverPimpleScalar
 - CFDEM Tutorial packedBed returns a similar result to cfdemSolverPiso. See `tutorials/rhoCfdemSolverPimpleScalar/packedBedTemp`.
 - Results
