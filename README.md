@@ -96,7 +96,7 @@ enableCoupling          on;
 
 # Notes for converting an incompressible tutorial from CFDEM to a compressible tutorial
 
-1. Some basic changes are needed:
+1. `0` directory
 
 - Convert 0/p from incompressible units to compressible units, and adjust for the difference between gauge and absolute pressure. For example, 0 pressure in an incompressible tutorial is ~1E5 Pa in a compressible tutorial.
 
@@ -104,9 +104,13 @@ enableCoupling          on;
 
 - Create a file for rho and adjust to the value of rho in the incompressible tutorial. Often this is found in the octave file for post processing. For an incompressible tutorial, pressure = p/rho and viscosity is kinematic viscosity (mu/rho), so the value of rho must be found from the post processing of an incompressible case.
 
+2. `system` directory 
+
 - Add a couplingProperties file to the system directory.  This allows OpenFOAM tutorials, without any CFDEM interaction, to run in the event system/couplingParameters `enableCoupling` is set to `off`
+
+3. `constant` directory
 
 - In the constant directory, `transportProperties` is replaced by `thermophysicalProperties`.  Be sure to set rho and mu accordingly. Often rho can be found in the octave file in an incompressible CFDEM tutorial.  Meanwhile, viscosity, mu, is equal to nu * rho, where nu is the kinematic viscosity in the incompressible case.
 
-
+4. Search for the solver name (e.g., `grep -r cfdemSolverPiso`) and replace all instances of the incompressible solver name with the name of the compressible solver (e.g., `rhoCfdemSolverPimple`)
 
