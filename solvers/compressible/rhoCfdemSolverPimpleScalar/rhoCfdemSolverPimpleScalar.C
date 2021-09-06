@@ -85,32 +85,32 @@ int main(int argc, char *argv[])
     #include "createFvOptions.H"
     #include "initContinuityErrs.H"
 
-IOdictionary couplingParameters
-(
-   IOobject
-   (
-       "couplingParameters",
-       runTime.time().system(),
-       runTime,
-       IOobject::MUST_READ,
-       IOobject::NO_WRITE
-   )
-);
+    IOdictionary couplingParameters
+    (
+       IOobject
+       (
+           "couplingParameters",
+           runTime.time().system(),
+           runTime,
+           IOobject::MUST_READ,
+           IOobject::NO_WRITE
+       )
+    );
 
-bool enableCoupling;
-(couplingParameters.lookup("enableCoupling")) >> enableCoupling;
+    bool enableCoupling;
+    (couplingParameters.lookup("enableCoupling")) >> enableCoupling;
 
-// create cfdemCloud
-#include "readGravitationalAcceleration.H"
-#include "checkImCoupleM.H"
-#if defined(anisotropicRotation)
-   cfdemCloudRotation particleCloud(mesh);
-#elif defined(superquadrics_flag)
-    cfdemCloudRotationSuperquadric particleCloud(mesh);
-#else
-    cfdemCloud particleCloud(mesh);
-#endif
-#include "checkModelType.H"
+    // create cfdemCloud
+    #include "readGravitationalAcceleration.H"
+    #include "checkImCoupleM.H"
+    #if defined(anisotropicRotation)
+        cfdemCloudRotation particleCloud(mesh);
+    #elif defined(superquadrics_flag)
+        cfdemCloudRotationSuperquadric particleCloud(mesh);
+    #else
+        cfdemCloud particleCloud(mesh);
+    #endif
+    #include "checkModelType.H"
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 
@@ -125,42 +125,42 @@ bool enableCoupling;
         #include "compressibleCourantNo.H"
         #include "setDeltaT.H"
 
-if (enableCoupling)
-{
-        // do particle stuff
-        particleCloud.clockM().start(1,"Global");
-        particleCloud.clockM().start(2,"Coupling");
-        bool hasEvolved = particleCloud.evolve(voidfraction,Us,U);
-
-        if(hasEvolved)
+        if (enableCoupling)
         {
-            particleCloud.smoothingM().smoothenAbsolutField(particleCloud.forceM(0).impParticleForces());
+            // do particle stuff
+            particleCloud.clockM().start(1,"Global");
+            particleCloud.clockM().start(2,"Coupling");
+            bool hasEvolved = particleCloud.evolve(voidfraction,Us,U);
+
+            if(hasEvolved)
+            {
+                particleCloud.smoothingM().smoothenAbsolutField(particleCloud.forceM(0).impParticleForces());
+            }
+
+            Info << "update Ksl.internalField()" << endl;
+            Ksl = particleCloud.momCoupleM(particleCloud.registryM().getProperty("implicitCouple_index")).impMomSource();
+            Ksl.correctBoundaryConditions();
         }
+        surfaceScalarField voidfractionf = fvc::interpolate(voidfraction);
+        volScalarField voidfractionRho = voidfraction * rho;
 
-        Info << "update Ksl.internalField()" << endl;
-        Ksl = particleCloud.momCoupleM(particleCloud.registryM().getProperty("implicitCouple_index")).impMomSource();
-        Ksl.correctBoundaryConditions();
-}
-surfaceScalarField voidfractionf = fvc::interpolate(voidfraction);
-volScalarField voidfractionRho = voidfraction * rho;
+        if (enableCoupling)
+        {
+            phi = voidfractionf*phiByVoidfraction;
 
-if (enableCoupling)
-{
-        phi = voidfractionf*phiByVoidfraction;
+            //Force Checks
+            #include "forceCheckIm.H"
 
-        //Force Checks
-        #include "forceCheckIm.H"
+            #include "solverDebugInfo.H"
+            particleCloud.clockM().stop("Coupling");
 
-        #include "solverDebugInfo.H"
-        particleCloud.clockM().stop("Coupling");
+            particleCloud.clockM().start(26,"Flow");
 
-        particleCloud.clockM().start(26,"Flow");
-
-        // get scalar source from DEM        
-        particleCloud.forceM(1).manipulateScalarField(Tsource);
-        Tsource.correctBoundaryConditions();
-        particleCloud.forceM(1).commToDEM();
-}
+            // get scalar source from DEM        
+            particleCloud.forceM(1).manipulateScalarField(Tsource);
+            Tsource.correctBoundaryConditions();
+            particleCloud.forceM(1).commToDEM();
+        }
 
         if(particleCloud.solveFlow() || !enableCoupling)
         {
@@ -168,7 +168,7 @@ if (enableCoupling)
             if (pimple.nCorrPIMPLE() <= 1)
             {
                  #include "rhoEqn.H"
-                voidfractionRho = voidfraction * rho;
+                 voidfractionRho = voidfraction * rho;
             }
 
         // --- Pressure-velocity PIMPLE corrector loop
@@ -204,9 +204,8 @@ if (enableCoupling)
                 // --- PISO loop
                 for (int corr=0; corr<nCorr; corr++)
                 {
-
                     #include "pEqn.H"
- 
+                    voidfractionRho = voidfraction * rho;
                 }
 
             }// END --- Pressure-velocity PIMPLE corrector loop

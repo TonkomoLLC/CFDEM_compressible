@@ -32,7 +32,7 @@ Description
 
     fvScalarMatrix rhoEqn
     (
-        fvm::ddt(rho)
+        fvm::ddt(voidfraction,rho)
       + fvc::div(phi)
       ==
         fvOptions(rho)
